@@ -1,0 +1,29 @@
+package piscine
+
+import "github.com/01-edu/z01"
+
+func PrintNbr(n int) {
+	if n < 0 {
+		z01.PrintRune('-')
+		n = -n
+	}
+	if n >= 10 {
+		PrintNbr(n / 10)
+	}
+	z01.PrintRune(rune(n%10) + '0')
+}
+
+func PrintNbrInBase(n int, base string) {
+	if n < 0 {
+		z01.PrintRune('-')
+		n = -n
+	}
+	baseLen := len(base)
+	if baseLen < 2 {
+		return
+	}
+	if n >= baseLen {
+		PrintNbrInBase(n/baseLen, base)
+	}
+	z01.PrintRune(rune(base[n%baseLen]))
+}
