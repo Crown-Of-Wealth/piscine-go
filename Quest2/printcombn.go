@@ -1,6 +1,9 @@
 package piscine
 
-import "github.com/01-edu/z01"
+import (
+	"github.com/01-edu/z01"
+	"fmt"
+)
 
 func PrintCombN(n int) {
 	if n < 1 || n > 9 {
@@ -15,38 +18,38 @@ func PrintCombN(n int) {
 		}
 	} else {
 		digits := make([]int, n)
-
+		fmt.Println(digits)
 		// init
-		for i := range n {
-			digits[i] = i
-		}
-
-		for {
-			// 1. print
-			for i := range n {
-				z01.PrintRune(rune(digits[i] + '0'))
-			}
-
-			// 2. check last
-			if digits[0] == 10-n {
-				break
-			}
-
-			z01.PrintRune(',')
-			z01.PrintRune(' ')
-
-			// 3. generate next
-			i := n - 1
-			for i >= 0 && digits[i] == 10-n+i {
-				i--
-			}
-
-			digits[i]++
-
-			for j := i + 1; j < n; j++ {
-				digits[j] = digits[j-1] + 1
-			}
-		}
+		// for i := range n {
+		// 	digits[i] = i
 	}
-	z01.PrintRune('\n')
+
+// 		for {
+// 			// 1. print
+// 			for i := range n {
+// 				z01.PrintRune(rune(digits[i] + '0'))
+// 			}
+
+// 			// 2. check last
+// 			if digits[0] == 10-n {
+// 				break
+// 			}
+
+// 			z01.PrintRune(',')
+// 			z01.PrintRune(' ')
+
+// 			// 3. generate next
+// 			i := n - 1
+// 			for i >= 0 && digits[i] == 10-n+i {
+// 				i--
+// 			}
+
+// 			digits[i]++
+
+// 			for j := i + 1; j < n; j++ {
+// 				digits[j] = digits[j-1] + 1
+// 			}
+// 		}
+// 	}
+// 	z01.PrintRune('\n')
 }

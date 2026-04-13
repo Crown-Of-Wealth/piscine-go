@@ -9,8 +9,10 @@ func PrintNbr(n int) {
 	}
 	if n >= 10 {
 		PrintNbr(n / 10)
+		// z01.PrintRune(rune(n%10) + '0')
 	}
 	z01.PrintRune(rune(n%10) + '0')
+	z01.PrintRune('\n')
 }
 
 func PrintNbrInBase(n int, base string) {
