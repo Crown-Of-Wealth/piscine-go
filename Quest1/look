@@ -1,0 +1,6 @@
+#!/bin/bash
+
+find . \( -name 'a*' -o -name '*z' -o -name 'z*a' \)
+find . -type f -name 'a*' -o -name '*z' -o -name 'z*a' // for files only
+find . -type d -name 'a*' -o -name '*z' -o -name 'z*a' // for directories only
+find . \( -name 'a*' -o -name '*z' -o -name 'z*a' \) -printf '%f\n' // to print only the names without the path
