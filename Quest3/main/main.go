@@ -1,7 +1,7 @@
 package main
 
 import (
-	// "fmt"
+	"fmt"
 	"piscine"
 )
 
@@ -21,5 +21,7 @@ func main() {
 	// piscine.UltimateDivMod(&a, &b)
 	// fmt.Println(a)
 	// fmt.Println(b)
-	piscine.PrintStr("Hello World!")
+	// piscine.PrintStr("Hello World!")
+	l := piscine.StrLen("Hello World!")
+	fmt.Println(l)
 }
