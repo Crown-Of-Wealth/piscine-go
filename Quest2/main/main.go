@@ -1,7 +1,8 @@
 package main
 
 import (
-	"piscine"
+	"fmt"
+	// "piscine"
 	// "github.com/01-edu/z01"
 )
 
@@ -14,6 +15,11 @@ func main() {
 	// z01.PrintRune('\n')
 	// piscine.PrintCombN(1)
 	// piscine.PrintCombN(2)
-	piscine.PrintCombN(9)
-	// piscine.Ovie()	
+	// piscine.PrintCombN(9)
+	// piscine.Ovie()
+	astring := "OvieOkomowho"
+	rastr := []rune(astring)
+	// fmt.Println(astring)
+	// fmt.Printf("%v\n", rastr[3])
+	fmt.Println(rastr[4])
 }
