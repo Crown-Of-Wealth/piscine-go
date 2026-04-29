@@ -50,5 +50,5 @@ func main() {
 	// fmt.Println(t)
 	// arg := 5
 	// fmt.Println(piscine.RecursiveFactorial(arg))
-	fmt.Println(piscine.IterativePower(4, 3))
+	fmt.Println(piscine.RecursivePower(4, 3))
 }
