@@ -47,8 +47,12 @@ func main() {
 	// piscine.DescIntegerTable(s)
 	// piscine.DescIntegerTable(t)
 	// fmt.Println(s)
-	// fmt.Println(t)
-	// arg := 5
-	// fmt.Println(piscine.RecursiveFactorial(arg))
-	fmt.Println(piscine.RecursivePower(4, 3))
+	// fmt.Println(t)	
+	// fmt.Println(piscine.RecursiveFactorial(5))
+	// fmt.Println(piscine.RecursivePower(4, 3))
+	fmt.Println(piscine.Fibonacci(0))	
+	fmt.Println(piscine.Fibonacci(6))
+	fmt.Println(piscine.Fibonacci(7))
+	fmt.Println(piscine.Fibonacci(8))
+	fmt.Println(piscine.Fibonacci(9))
 }
