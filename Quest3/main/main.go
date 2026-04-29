@@ -48,5 +48,4 @@ func main() {
 	piscine.DescIntegerTable(t)
 	fmt.Println(s)
 	fmt.Println(t)
-
 }
