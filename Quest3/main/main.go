@@ -48,6 +48,7 @@ func main() {
 	// piscine.DescIntegerTable(t)
 	// fmt.Println(s)
 	// fmt.Println(t)
-	arg := 5
-	fmt.Println(piscine.RecursiveFactorial(arg))
+	// arg := 5
+	// fmt.Println(piscine.RecursiveFactorial(arg))
+	fmt.Println(piscine.IterativePower(4, 3))
 }
