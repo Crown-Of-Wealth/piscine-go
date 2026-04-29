@@ -32,12 +32,21 @@ func main() {
 	// s := "Hello World!"
 	// s = piscine.StrRev(s)
 	// fmt.Println(s)
-	fmt.Println(piscine.Atoi("12345"))
-	fmt.Println(piscine.Atoi("0000000012345"))
-	fmt.Println(piscine.Atoi("012 345"))
-	fmt.Println(piscine.Atoi("Hello World!"))
-	fmt.Println(piscine.Atoi("+1234"))
-	fmt.Println(piscine.Atoi("-1234"))
-	fmt.Println(piscine.Atoi("++1234"))
-	fmt.Println(piscine.Atoi("--1234"))
+	// fmt.Println(piscine.Atoi("12345"))
+	// fmt.Println(piscine.Atoi("0000000012345"))
+	// fmt.Println(piscine.Atoi("012 345"))
+	// fmt.Println(piscine.Atoi("Hello World!"))
+	// fmt.Println(piscine.Atoi("+1234"))
+	// fmt.Println(piscine.Atoi("-1234"))
+	// fmt.Println(piscine.Atoi("++1234"))
+	// fmt.Println(piscine.Atoi("--1234"))
+	// s := []int{5, 2, 9, 1, 5, 6, 7, 3, 4, 8, 4}
+	// (piscine.PrintMe(s))
+	s := []int{5,4,3,2,1,0}
+	t := []int{9,7,8,5,1,2,3,4,5}
+	piscine.DescIntegerTable(s)
+	piscine.DescIntegerTable(t)
+	fmt.Println(s)
+	fmt.Println(t)
+
 }
