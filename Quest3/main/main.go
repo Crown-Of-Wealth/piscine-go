@@ -57,6 +57,6 @@ func main() {
 	// fmt.Println(piscine.Fibonacci(9))
 	// fmt.Println(piscine.Sqrt(64))
 	// fmt.Println(piscine.Sqrt(30))
-	fmt.Println(piscine.IsPrime(15))
-	fmt.Println(piscine.IsPrime(41))
+	fmt.Println(piscine.FindNextPrime(15))
+	fmt.Println(piscine.FindNextPrime(41))
 }
