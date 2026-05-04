@@ -6,9 +6,9 @@ import (
 )
 
 func main() {
-	// n := 0
-	// piscine.PointOne(&n)
-	// fmt.Println(n)
+	n := 0
+	piscine.PointOne(&n)
+	fmt.Println(n)
 	// a := 13
 	// b := 2
 	// var div int
@@ -57,6 +57,6 @@ func main() {
 	// fmt.Println(piscine.Fibonacci(9))
 	// fmt.Println(piscine.Sqrt(64))
 	// fmt.Println(piscine.Sqrt(30))
-	fmt.Println(piscine.FindNextPrime(15))
-	fmt.Println(piscine.FindNextPrime(41))
+	// fmt.Println(piscine.FindNextPrime(15))
+	// fmt.Println(piscine.FindNextPrime(41))
 }
